@@ -2,42 +2,46 @@
 
 **BioAge** to zaawansowane narzędzie analityczne typu SPA (Single Page Application), które przekłada surowe dane biomedyczne i wydolnościowe na zrozumiały wskaźnik: **Wiek Funkcjonalny**. 
 
-W świecie, gdzie "70 to nowe 50", nasza aplikacja pozwala użytkownikom obiektywnie zmierzyć tempo starzenia się ich organizmu i zidentyfikować "wąskie gardła" ich sprawności.
+---
+
+## 🗺️ Nawigacja po Projekcie
+Szybki dostęp do dokumentacji strategicznej i technicznej:
+
+* **[🏠 Strona Główna](#-kluczowe-filary-projektu)**
+* **[💡 Strategia Produktu](./docs/01-opis-pomyslu.md)** – Wizja, problem i katalog testów.
+* **[⚙️ Specyfikacja Funkcjonalna](./docs/02-specyfikacja-funkcjonalna.md)** – Algorytmy i opis testów (Flamingo, SRT, Cooper).
+* **[📊 Model Danych](./docs/03-model-danych.md)** – Struktura obiektów JS i LocalStorage.
+* **[👥 Analiza Persony (ICP)](./docs/icp-persona.md)** – Kto jest naszym użytkownikiem?
+* **[🎯 Analiza JTBD](./docs/jtbd-analysis.md)** – Jakie problemy rozwiązujemy?
+* **[🚩 Raport Audytowy](./docs/kill-the-idea-report.md)** – Krytyczna analiza biznesowa (Kill the Idea).
 
 ---
 
 ## 🚀 Kluczowe Filary Projektu
 
 ### 1. Diagnostyka Wielowymiarowa
-Aplikacja nie opiera się na jednym teście. Agreguje dane z 4 kluczowych domen:
-* **Cardiovascular (VO2max):** Wydolność serca i płuc.
-* **Neuromuscular:** Równowaga, czas reakcji, koordynacja.
-* **Musculoskeletal:** Siła relatywna i mobilność stawów.
-* **Metabolic & Anthropometric:** Wskaźniki składu ciała (w tym kluczowy **WtHR**).
-* **Metabolic:** Estymacja na podstawie tętna spoczynkowego i regeneracji.
+Aplikacja agreguje dane z 5 kluczowych domen:
+* **Cardiovascular (VO2max):** Wydolność serca i płuc (Test Coopera).
+* **Neuromuscular:** Równowaga i koordynacja (Próba Flamingo).
+* **Musculoskeletal:** Siła relatywna i mobilność (SRT, Plank).
+* **Metabolic & Anthropometric:** Wskaźnik WtHR (talia/wzrost).
+* **Metabolic:** Estymacja na podstawie tętna spoczynkowego.
 
 ### 2. Silnik Analityczny (JS Engine)
-* **Normalizacja danych:** Przeliczanie wyników (metry, sekundy, powtórzenia) na percentyle w grupach wiekowych.
-* **Algorytm Agregujący:** Obliczanie średniej ważonej z uwzględnieniem priorytetów (np. wydolność krążeniowa ma wyższą wagę w ocenie długowieczności niż elastyczność).
+* **Normalizacja danych:** Przeliczanie wyników na percentyle wiekowe.
+* **Algorytm Agregujący:** Obliczanie średniej ważonej (Wydolność: 30%, Mobilność: 25%, Pozostałe: 15%).
 
 ### 3. Wizualizacja "Data-to-Action"
-Zastosowanie bibliotek JS (Chart.js/ApexCharts) do generowania:
+Zastosowanie bibliotek JS (Chart.js) do generowania:
 * **Linear Aging Curve:** Twoja pozycja na krzywej regresji sprawności.
-* **Biological Gap:** Wizualizacja różnicy między wiekiem metrykalnym a funkcjonalnym.
+* **Biological Gap:** Różnica między wiekiem metrykalnym a funkcjonalnym.
 
 ---
 
 ## 🛠 Stos Technologiczny (Tech Stack)
-* **Core:** HTML5, CSS3 (Custom Variables, Flexbox/Grid), Modern JavaScript (ES11+).
-* **Content:** Markdown (wykorzystywany jako CMS do instrukcji testów i treści edukacyjnych).
+* **Core:** HTML5, CSS3, Modern JavaScript (ES11+).
 * **Charts:** Chart.js dla lekkości i responsywności.
-* **Storage:** LocalStorage (dla zachowania prywatności danych użytkownika - model Privacy-by-Design).
-
-## 📂 Struktura Dokumentacji (Metodyka ABS)
-Zgodnie ze standardem *Architekta Biznesu SaaS*, projekt podzielono na:
-1.  `01-opis-pomyslu.md` - Strategia, Problem, Rozwiązanie.
-2.  `02-specyfikacja-funkcjonalna.md` - Opis logiki testów i algorytmów. (Wkrótce)
-3.  `03-model-danych.md` - Struktura obiektów JS i mapowanie wyników. (Wkrótce)
+* **Storage:** LocalStorage (Privacy-by-Design).
 
 ---
 *BioAge: Measure what matters. Stay functional.*
