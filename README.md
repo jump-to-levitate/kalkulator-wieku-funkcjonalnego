@@ -8,12 +8,12 @@
 Szybki dostęp do dokumentacji strategicznej i technicznej:
 
 * **[🏠 Strona Główna](#-kluczowe-filary-projektu)**
-* **[💡 Strategia Produktu](./docs/01-opis-pomyslu.md)** – Wizja, problem i katalog testów.
-* **[⚙️ Specyfikacja Funkcjonalna](./docs/02-specyfikacja-funkcjonalna.md)** – Algorytmy i opis testów (Flamingo, SRT, Cooper).
-* **[📊 Model Danych](./docs/03-model-danych.md)** – Struktura obiektów JS i LocalStorage.
-* **[👥 Analiza Persony (ICP)](./docs/icp-persona.md)** – Kto jest naszym użytkownikiem?
-* **[🎯 Analiza JTBD](./docs/jtbd-analysis.md)** – Jakie problemy rozwiązujemy?
-* **[🚩 Raport Audytowy](./docs/kill-the-idea-report.md)** – Krytyczna analiza biznesowa (Kill the Idea).
+* **[💡 Strategia Produktu](bioage-app/docs/01-opis-pomyslu.md)** – Wizja, problem i katalog testów.
+* **[⚙️ Specyfikacja Funkcjonalna](bioage-app/docs/02-specyfikacja-funkcjonalna.md)** – Algorytmy i opis testów (Flamingo, SRT, Cooper).
+* **[📊 Model Danych](bioage-app/docs/03-model-danych.md)** – Struktura obiektów JS i LocalStorage.
+* **[👥 Analiza Persony (ICP)](bioage-app/docs/icp-persona.md)** – Kto jest naszym użytkownikiem?
+* **[🎯 Analiza JTBD](bioage-app/docs/jtbd-analysis.md)** – Jakie problemy rozwiązujemy?
+* **[🚩 Raport Audytowy](bioage-app/docs/kill-the-idea-report.md)** – Krytyczna analiza biznesowa (Kill the Idea).
 
 ---
 
